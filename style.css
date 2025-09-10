@@ -910,10 +910,37 @@ body {
   flex-wrap: wrap;
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    .profile-img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+      .profile-img {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 8px solid #ffffff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 .profile-placeholder {
